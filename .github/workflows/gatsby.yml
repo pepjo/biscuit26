@@ -15,4 +15,4 @@ jobs:
     - run: npm install
     - run: npm run ci-deploy
       env: # Or as an environment variable
-        GH_TOKEN: ${{ GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
