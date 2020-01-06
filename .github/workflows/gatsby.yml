@@ -13,6 +13,8 @@ jobs:
       with:
         node-version: '10.x'
     - run: npm install
+    - run: git config --global user.email "pep@rodeja.me"
+    - run: git config --global user.name "Github CI"
     - run: npm run ci-deploy
       env: # Or as an environment variable
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
